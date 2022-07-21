@@ -37,8 +37,6 @@ body {
 }
 
 .container__card__images {
-  width: 100%;
-  height: max-content;
   position: absolute;
   left: 2.5rem;
   top: -7rem;
