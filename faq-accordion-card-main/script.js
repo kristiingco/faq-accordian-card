@@ -18,4 +18,10 @@ function toggle() {
 
 for (let item of dropdownItems) {
   item.addEventListener("click", toggle);
+  item.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      toggle.apply(this);
+    }
+  });
 }
