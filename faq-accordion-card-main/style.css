@@ -59,6 +59,7 @@ body {
 
 .container__card__details__group {
   border-bottom: 1px solid var(--light-grayish-blue);
+  cursor: pointer;
 }
 
 .container__card__details__question {

@@ -5,7 +5,7 @@ const dropdownItems = document.getElementsByClassName(
 function toggle() {
   const [question, answer] = this.children;
   const [questionText, arrow] = question.children;
-  if (answer.style.display === "none") {
+  if (answer.style.display === "none" || answer.style.display === "") {
     answer.style.display = "block";
     questionText.style.fontWeight = "bold";
     arrow.style.transform = "rotate(180deg)";
