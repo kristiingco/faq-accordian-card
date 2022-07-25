@@ -2,6 +2,7 @@
   --soft-violet: hsl(273, 75%, 66%);
   --soft-blue: hsl(240, 73%, 65%);
   --light-grayish-blue: hsl(240, 5%, 91%);
+  --soft-red: hsl(14, 88%, 65%);
   --white: rgb(255, 255, 255);
 }
 
@@ -96,7 +97,7 @@ body {
 @media screen and (min-width: 1024px) {
   .container__card {
     width: 50rem;
-    height: 26rem;
+    min-height: 26rem;
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
@@ -141,5 +142,11 @@ body {
 
   .container__card__details__answer {
     width: 14rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .container__card__details__question:hover {
+    color: var(--soft-red);
   }
 }
