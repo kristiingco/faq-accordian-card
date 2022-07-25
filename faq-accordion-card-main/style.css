@@ -27,12 +27,14 @@ body {
   width: 20rem;
   height: 100%;
   border-radius: 1.5rem;
-
   margin-top: 2rem;
   font-size: 0.8rem;
   display: flex;
   flex-direction: column;
   position: relative;
+  box-shadow: 1px 12px 32px -10px rgba(0, 0, 0, 0.78);
+  -webkit-box-shadow: 1px 12px 32px -10px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 1px 12px 32px -10px rgba(0, 0, 0, 0.78);
 }
 
 .container__card__images {
