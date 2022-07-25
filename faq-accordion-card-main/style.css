@@ -27,29 +27,37 @@ body {
   width: 20rem;
   height: 100%;
   border-radius: 1.5rem;
-  padding: 5rem 1.5rem 2rem 1.5rem;
+
   margin-top: 2rem;
   font-size: 0.8rem;
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  position: relative;
 }
 
 .container__card__images {
-  position: absolute;
-  left: 2.5rem;
-  top: -7rem;
+  background-image: url("images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 90px;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .container__card__images img {
+  position: absolute;
+  left: 2.5rem;
+  top: -7rem;
   width: 15rem;
 }
 
-.container__card__images__back {
-  position: absolute;
-  left: 0;
-  top: 7rem;
+.container__card__images img[alt="desktop box"] {
+  display: none;
+}
+
+.container__card__details {
+  padding: 0rem 1.5rem 2rem 1.5rem;
 }
 
 .container__card__details__header {
@@ -76,7 +84,60 @@ body {
 .attribution {
   font-size: 0.5rem;
   text-align: center;
+  color: var(--white);
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1024px) {
+  .container__card {
+    width: 50rem;
+    height: 26rem;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .container__card__images {
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: -300px -150px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .container__card__images img {
+    width: 27rem;
+    position: relative;
+    left: -4rem;
+    top: 3rem;
+  }
+
+  .container__card__images img[alt="desktop box"] {
+    display: block;
+    position: absolute;
+    width: 10rem;
+    left: -5rem;
+    top: 12rem;
+  }
+
+  .container__card__details {
+    padding: 3rem 3rem 0rem 3rem;
+  }
+
+  .container__card__details__header {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .container__card__details__question {
+    width: 16rem;
+  }
+
+  .container__card__details__answer {
+    width: 14rem;
+  }
 }

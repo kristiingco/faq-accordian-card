@@ -1,3 +1,17 @@
+const handleResize = function () {
+  const illustration = document.getElementById(
+    "container__card__images__illustation"
+  );
+  if (window.innerWidth >= 768) {
+    illustration.src = "images/illustration-woman-online-desktop.svg";
+  } else {
+    illustration.src = "images/illustration-woman-online-mobile.svg";
+  }
+};
+
+handleResize();
+window.addEventListener("resize", handleResize);
+
 const dropdownItems = document.getElementsByClassName(
   "container__card__details__group"
 );
