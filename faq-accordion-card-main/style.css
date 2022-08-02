@@ -107,7 +107,7 @@ body {
     background-image: url("images/bg-pattern-desktop.svg");
     background-size: 150%;
     background-repeat: no-repeat;
-    background-position: -300px -150px;
+    background-position: -200px -100px;
     width: 100%;
     overflow: hidden;
   }
@@ -137,11 +137,12 @@ body {
   }
 
   .container__card__details__question {
-    width: 16rem;
+    width: 20rem;
+    font-size: 0.9rem;
   }
 
   .container__card__details__answer {
-    width: 14rem;
+    width: 18rem;
   }
 }
 
